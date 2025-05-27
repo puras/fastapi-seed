@@ -25,7 +25,11 @@ class Settings(BaseSettings):
     # 数据库配置
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",
-        "sqlite+aiosqlite:///./moss.db"  # 使用异步SQLite驱动
+        "sqlite+aiosqlite:///./instance/moss.db"  # 使用异步SQLite驱动
+    )
+    DB_TABLE_PREFIX = os.getenv(
+        "DB_TABLE_PREFIX",
+        "mo_"
     )
 
     class Config:

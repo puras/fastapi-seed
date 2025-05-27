@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from .api import hello
+from .api import user
 
 router = APIRouter()
 
-router.include_router(hello.router, prefix="/hello", tags=["hello"])
+router.include_router(user.router, prefix="/users", tags=["User"])
