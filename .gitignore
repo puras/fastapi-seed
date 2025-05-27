@@ -1,5 +1,11 @@
 # idea
 .idea
 
+# python
+__pycache__
+
+# MacOS
+.DS_Store
+
 # Custom
 logs
